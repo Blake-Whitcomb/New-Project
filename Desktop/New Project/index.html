@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <section>
        <nav>
-        <img src="./assets/FES.svg" alt="">
+        <img src="./assets/FES.svg" class="logo" alt="">
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#discord">Discord</a></li>
@@ -17,35 +18,45 @@
        </nav> 
   
     <header>
+        <div class="row">
         <div>
          <h1>Best place to learn Frontend</h1>
-         <p>Go from absolute beginner to pro with a simplified process.</p>
+         <p class="sub">Go from absolute beginner to pro with a simplified process.</p>
          <button>Start now</button>
        </div>
          <figure>
           <img src="./assets/laptop.png" alt="Home Page Image">
         </figure>
+       </div> 
     </heder>
 </section>
 
 <main>
     <section id="about">
         <h2>About</h2>
-        <div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, aliquid impedit et vitae omnis nisi?</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, aliquid impedit et vitae omnis nisi?</p>
+        <div class="row">
+        <div class="section1">
+        <div class="section1__wrapper">
+            <p class="wording__1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, aliquid impedit et vitae omnis nisi?</p>
+            <p class="wording__1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, aliquid impedit et vitae omnis nisi?</p>
         </div>
-        <figure><img src="./assets/about.jpg" alt=""></figure>
+        <figure class="about__img--wrapper"><img src="./assets/about.jpg" alt=""></figure>
+   </div>
     </section>
 
     <section id="discord">
         <h2>Discord</h2>
-        <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae odit cupiditate perferendis id vel hic.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, optio dolorem minus excepturi, sunt possimus et dolorum quo numquam veniam consequuntur nemo perferendis aliquid consequatur!</p>
+        <div class="row">
+        <div class="section1">
+            <figure class="about__img--wrapper"><img src="./assets/discord.png" alt="Discord"></figure>
+            <div class="section1__wrapper">
+            <p class="wording__1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae odit cupiditate perferendis id vel hic.</p>
+             <p class="wording__1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, optio dolorem minus excepturi, sunt possimus et dolorum quo numquam veniam consequuntur nemo perferendis aliquid consequatur!</p>
         </div>
-        <figure><img src="./assets/discord.png" alt="Discord"></figure>
-    </section>
+        
+    </div>
+   </div>
+</section>
 
     <section id="contact">
 
@@ -62,13 +73,13 @@
 </main>
 
 <footer>
-    <img src="./assets/FES.svg" alt="">
-    <div>
-        <a href="#about">About</a>
-        <a href="#discord">Discord</a>
-        <a href="#contact">Contact</a>
-        <a href="#top">Courses</a>
-        <p>Copyright Frontend Simplified</p>
+    <img class="footer__logo" src="./assets/FES.svg" alt="">
+    <div class="footer__links">
+        <a class="footer__link" href="#about">About</a>
+        <a class="footer__link" href="#discord">Discord</a>
+        <a class="footer__link"href="#contact">Contact</a>
+        <a class="footer__link"href="#top">Courses</a>
+             <p>Copyright Frontend Simplified</p>
     </div>
 </footer>  
 </body>
